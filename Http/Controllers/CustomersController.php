@@ -72,7 +72,7 @@ class CustomersController extends Controller
 				//->withInput(Input::except());
 		} else {
 			// store
-			$user = new Users;
+			$user = new Customers;
 			$user->firstname   		= Input::get('firstname');
 			$user->lastname   	= Input::get('lastname');
 			$user->email 		= Input::get('email');
@@ -96,7 +96,7 @@ class CustomersController extends Controller
 	{
 		//
 		// get the user
-		$user = Users::find($id);
+		$user = Customers::find($id);
 		$user->password = "";
 
 		// show the edit form and pass the nerd
@@ -127,7 +127,7 @@ class CustomersController extends Controller
 				->withInput();
 		} else {
 			// store
-			$user = Users::find($id);
+			$user = Customers::find($id);
 			$user->firstname		= Input::get('firstname');
 			$user->lastname	= Input::get('lastname');
 			$user->email	= Input::get('email');
