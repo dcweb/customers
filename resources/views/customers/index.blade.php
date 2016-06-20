@@ -5,6 +5,7 @@
     <div class="main-header">
       <h1>Users</h1>
       <ol class="breadcrumb">
+        <li><a href="{!! URL::to('admin/dashboard') !!}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
         <li class="active"><i class="fa fa-user"></i> Users</li>
       </ol>
     </div>
